@@ -1,0 +1,21 @@
+{
+  "possibleTypes": {
+    "Node": [
+      "Asset",
+      "Launch",
+      "LaunchSite",
+      "Link",
+      "Rocket",
+      "ScheduledOperation",
+      "ScheduledRelease",
+      "User"
+    ],
+    "ScheduledOperationAffectedDocument": [
+      "Asset",
+      "Launch",
+      "LaunchSite",
+      "Link",
+      "Rocket"
+    ]
+  }
+}

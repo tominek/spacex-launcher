@@ -1,0 +1,17 @@
+query Launches {
+  launches (orderBy: date_DESC) {
+    id
+    name
+    slug
+    date
+    launchSite {
+      id
+      name
+    }
+    rocket {
+      id
+      name
+      type
+    }
+  }
+}

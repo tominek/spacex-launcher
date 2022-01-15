@@ -1,0 +1,21 @@
+query Launch ($id: ID!) {
+  launch(where: {id: $id}) {
+    id
+    name
+    date
+    launchSite {
+      id
+      longName
+      name
+    }
+    launchSuccess
+    rocket {
+      id
+      name
+      type
+      image {
+        url
+      }
+    }
+  }
+}

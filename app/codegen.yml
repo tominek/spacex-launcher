@@ -1,0 +1,25 @@
+overwrite: true
+schema: 'https://api-eu-central-1.graphcms.com/v2/ckyfjv6m70u4m01z3094y4ugg/master'
+
+documents: 'src/**/*.gql'
+generates:
+  ./src/graphql/index.ts:
+    plugins:
+      - typescript
+      - typescript-operations
+      - typescript-vue-apollo
+    config:
+      vueCompositionApiImportFrom: vue
+      typesPrefix: I
+      maybeValue: T
+      nonOptionalTypename: true
+  ./src/graphql/graphql.introspection.json:
+    plugins:
+      - introspection
+    config:
+      module: es2015
+  ./src/graphql/graphql.possibleTypes.json:
+    plugins:
+      - fragment-matcher
+    config:
+      module: es2015
